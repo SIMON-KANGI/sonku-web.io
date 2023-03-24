@@ -34,7 +34,7 @@
         <p  style="color:white" class="text-center">This is a website that helps our customers to get updated about the<br> new realeased movies and series, updated episodes before they physically <br>come to buy from the shop. </p>
         <span style="color:brown">Here are some of our updates:</span>
     </section>
-    <button class="btn btn-outline-info" type="button" onclick='document.getElementById("Movies").style.display="block"'>Click to see the latest movies</button>
+    <button data-bs-toggle="collapse" data-bs-target="#Movies" class="btn btn-outline-info" type="button" onclick='document.getElementById("Movies").style.display="block"'>Click to see the latest movies</button>
     <section id="Movies" style="display:none;">
         <h2 style="color:orangered" class="text-center">Latest Movies</h2>
         <div class="row">
@@ -94,7 +94,7 @@
         </div>
         </div>
     </section>
-    <button class="btn btn-outline-info" type="button" style="margin:10px" onclick='document.getElementById("series").style.display="block"'>Go to series</button>
+    <button data-bs-toggle="collapse" data-bs-target="#series" class="btn btn-outline-info" type="button" style="margin:10px" onclick='document.getElementById("series").style.display="block"'>Go to series</button>
     <section id="series">
        <h2 class="text-center" style="color:orangered">Latest TV shows and Episodes</h2>
         <div class="row">
