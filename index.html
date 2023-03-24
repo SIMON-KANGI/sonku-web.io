@@ -16,141 +16,194 @@
     <div class="container-fluid">
     <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="width:0; background-color:rgb(17, 16, 16);">
+                <span class="navbar-toggler-icon" style="width:20px; color:white"></span>
               </button>
               <div class="collapse navbar-collapse" id="collapsibleNavbar">
-<ul class="navbar-nav">
-<li class="nav-item"><a class="nav-link" href="#welcome">Welcome</a> </li>
-<li class="nav-item"><a class="nav-link" href="#Movies">Movies</a> </li>
-<li class="nav-item"><a class="nav-link" href="#series">Series</a> </li>
-<li class="nav-item"><a class="nav-link" href="#contact">Contact</a> </li>
+<ul id="nav" class="navbar-nav">
+<li class="nav-item"><a style="color:white" class="nav-link" href="#welcome">Welcome</a> </li>
+<li class="nav-item"><a style="color:white" class="nav-link" href="#Movies">Movies</a> </li>
+<li class="nav-item"><a style="color:white" class="nav-link" href="#series">Series</a> </li>
+<li class="nav-item"><a style="color:white" class="nav-link" href="#contact">Contact</a> </li>
 </ul>
               </div>
         </div>
     </nav>
     <section id="welcome">
-        <h1>Welcome to our webpage</h1>
-        <p>This is a website that helps our customers to get updated about the<br> new realeased movies and series, updated episodes before they physically <br>come to buy from the shop. </p>
-        <span>Here are some of our updates:</span>
+        <h1 class="text-center">Welcome to our webpage</h1>
+        <p  style="color:white" class="text-center">This is a website that helps our customers to get updated about the<br> new realeased movies and series, updated episodes before they physically <br>come to buy from the shop. </p>
+        <span style="color:brown">Here are some of our updates:</span>
     </section>
-    <button type="btn" onclick='document.getElementById("Movies").style.display="block"'>Click to see the latest movies</button>
+    <button class="btn btn-outline-info" type="button" onclick='document.getElementById("Movies").style.display="block"'>Click to see the latest movies</button>
     <section id="Movies" style="display:none;">
+        <h2 style="color:orangered" class="text-center">Latest Movies</h2>
         <div class="row">
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col" id="one">
                 <button id="trailer"><a href="\trailers\operation fortune.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\operation.jpg" style="width:200px;">
+                <img class="img-fluid" src="\images\operation.jpg" style="width:100%;">
                 <p>Elite spy Orson Fortune must track down and stop the sale of a deadly new weapons technology wielded by billionaire arms broker Greg Simmonds </p></div>
                 
-            <div class="col" style="display:block; width:200px;" id="one">
-                <button id="trailer"><a href="\trailers\luther movie.mp4">trailer</a></button> <img  class="img-fluid" src="\images\luther.jpg" style="width:200px;">
+            <div class="col"  id="one">
+                <button id="trailer"><a href="\trailers\luther movie.mp4">trailer</a></button> <img  class="img-fluid" src="\images\luther.jpg" style="width:100%;">
                
               <p>A serial killer terrorizes London while detective John Luther sits behind bars. Haunted by his failure to capture the cyber psychopath who now taunts him, Luther decides to break out of prison to finish the job by any means necessary.</p>
              </div>
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col"  id="one">
                 <button id="trailer"><a href="\trailers\marlowe.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\marlowe.jpg" style="width:200px;">
+                <img class="img-fluid" src="\images\marlowe.jpg" style="width:100%;">
                 <p>Detective Phillip Marlowe becomes embroiled in an investigation with a wealthy family in Bay City, California after a beautiful blonde hires him to find her former lover</p>
      
             </div>
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col"  id="one">
                 <button id="trailer"><a href="\trailers\magic mike.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\mike.jpg" style="width:200px;">
+                <img class="img-fluid" src="\images\mike.jpg" style="width:100%;">
                 <p>Mike heads to London with a wealthy socialite who lures him with an offer he can't refuse -- and an agenda all her own. With everything on the line, he soon finds himself trying to whip a hot new roster of talented dancers into shape.</p>
            
             </div>
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col"  id="one">
                 <button id="trailer"><a href="\trailers\missing.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\Missing.png" style="width:200px;">
+                <img class="img-fluid" src="\images\Missing.png" style="width:100%;">
                 <p>When her mother disappears while on vacation in Colombia with her new boyfriend, June's search for answers is hindered by international red tape</p> 
             
             </div>
-                <div class="col" style="display:block; width:200px;" id="one">
+                <div class="col"  id="one">
                     <button id="trailer"><a href="\trailers\otto.mp4">trailer</a></button>
-                    <img class="img-fluid" src="\images\otto.jpg" style="width:200px;">
+                    <img class="img-fluid" src="\images\otto.jpg" style="width:100%;">
                     <p>When a lively young family moves in next door, grumpy widower Otto Anderson meets his match in a quick-witted, pregnant woman named Marisol, leading to an unlikely friendship that turns his world upside down.</p>
                   
                  </div>
-                    <div class="col" style="display:block; width:200px;" id="one">
+                    <div class="col"  id="one">
                         <button id="trailer" type="btn"><a href="\trailers\RITUAL.mp4">trailer</a></button>
-                        <img class="img-fluid" src="\images\ritual.jpg" style="width:200px;">
+                        <img class="img-fluid" src="\images\ritual.jpg" style="width:100%;">
                         <p>A detective hunts an international murderer committing ritualistic killings in a small Mississippi town. He seeks help from an anthropology professor who is an expert on the ancient rituals being performed.</p>
                   
                     </div>
                         
-                <div class="col" style="display:block; width:200px;" id="one">
+                <div class="col"  id="one">
                     <button id="trailer"><a href="\trailers\honeymoon.mp4">trailer</a></button>
-                    <img class="img-fluid" src="\images\honeymoon.jpg" style="width:200px;">
+                    <img class="img-fluid" src="\images\honeymoon.jpg" style="width:100%;">
                     <p>Newlyweds are about to embark on the romantic honeymoon of a lifetime in Venice, but when the trip is gatecrashed by the groom's best friend, it turns their perfect lovers' holiday into a complete disaster.</p> 
                
                 </div>
-                    <div class="col" style="display:block; width:200px;" id="one">
+                    <div class="col"  id="one">
                         <button id="trailer"><a href="\trailers\the devil.mp4">trailer</a></button> 
-                        <img class="img-fluid" src="\images\the devil.jpg" style="width:200px;">
+                        <img class="img-fluid" src="\images\the devil.jpg" style="width:100%;">
                         <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
                     
                 </div>
         </div>
         </div>
     </section>
-    <button  type="btn" style="margin:10px" onclick='document.getElementById("series").style.display="block"'>Go to series</button>
+    <button class="btn btn-outline-info" type="button" style="margin:10px" onclick='document.getElementById("series").style.display="block"'>Go to series</button>
     <section id="series">
-       
+       <h2 class="text-center" style="color:orangered">Latest TV shows and Episodes</h2>
         <div class="row">
             <div class="col">
-                <button type="button" id="trailer"><a href="\trailers\series\night agent.mp4">trailer</a> </button>
-            <img src="\images\night agent.jpg" class="img-fluid">
-        <p>While monitoring an emergency line, an FBI agent answers a call that plunges him into a deadly conspiracy involving a mole at the White House.</p>
+                <button id="trailer"><a href="\trailers\series\night agent.mp4">trailer</a></button> 
+               <a href="\trailers\series\night agent.mp4"><img class="img-fluid" src="\images\night agent.jpg" style="width:100%;"></a>
+                <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+            
         </div>
-            <div class="col" style="display:block; width:200px;" id="one">
-                <button id="trailer"><a href="\trailers\series\wolf pack.mp4">trailer</a></button> <img  class="img-fluid" src="\images\wolf pack.jpg" style="width:200px;">
+            <div class="col">
+                <button type="button" id="trailer"><a href="\trailers\series\fire.mp4">trailer</a> </button>
+            <img src="\images\fire.jpg" class="img-fluid" style="width:100%;">
+        <p>Bode Donovan, a young convict seeking redemption, joins an unconventional prison release firefighting program in Northern California, where he and other inmates are partnered with elite firefighters to extinguish massive, unpredictable wildfires.</p>
+        </div>
+            <div class="col" id="one">
+                <button id="trailer"><a href="\trailers\series\wolf pack.mp4">trailer</a></button> <img  class="img-fluid" src="\images\wolf pack.jpg" style="width:100%;">
                 <p>A teenage boy and girl have their lives changed forever when a California wildfire awakens a terrifying supernatural creature.</p>
              </div>
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col" id="one">
                 <button id="trailer"><a href="\trailers\series\THE LAST OF US Trailer (2023)-720p.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\LAST OF US.jpg" style="width:200px;">
+                <img class="img-fluid" src="\images\LAST OF US.jpg" style="width:100%;">
     <p>Joel and Ellie, a pair connected through the harshness of the world they live in, are forced to endure brutal circumstances and ruthless killers on a trek across a post-outbreak America.</p>
      
             </div>
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col"  id="one">
                 <button id="trailer"><a href="\trailers\series\mayfair.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\mayfair.jpg" style="width:200px;">
+                <img class="img-fluid" src="\images\mayfair.jpg" style="width:100%;">
                 <p>Rowan Fielding, an intuitive young neurosurgeon, discovers that she is the unlikely heir to a family of witches; as she grapples with her newfound powers, she must contend with a sinister presence that has haunted her family for generations.</p>
            
             </div>
-            <div class="col" style="display:block; width:200px;" id="one">
+            <div class="col"  id="one">
                 <button id="trailer"><a href="\trailers\series\will trent.mp4">trailer</a></button>
-                <img class="img-fluid" src="\images\will trent.jpg" style="width:200px;">
+                <img class="img-fluid" src="\images\will trent.jpg" style="width:100%;">
                 <p>Now that he is in a position to make a difference, Trent is determined to use his unique point of view to make sure no one is abandoned like he was. His personal motivation and background contribute to Will Trent having the highest clearance rate in the GBI.</p> 
             
             </div>
-                <div class="col" style="display:block; width:200px;" id="one">
+                <div class="col" id="one">
                     <button id="trailer"><a href="\trailers\series\Walker Independence.mp4">trailer</a></button>
-                    <img class="img-fluid" src="\images\Walker-Independence-2022.jpg" style="width:200px;">
+                    <img class="img-fluid" src="\images\Walker-Independence-2022.jpg" style="width:100%;">
                     <p>When a lively young family moves in next door, grumpy widower Otto Anderson meets his match in a quick-witted, pregnant woman named Marisol, leading to an unlikely friendship that turns his world upside down.</p>
                   
                  </div>
-                    <div class="col" style="display:block; width:200px;" id="one">
+                    <div class="col" id="one">
                         <button id="trailer" type="btn"><a href="\trailers\series\poker face.mp4">trailer</a></button>
-                        <img class="img-fluid" src="\images\poker face.jpg" style="width:200px;">
+                        <img class="img-fluid" src="\images\poker face.jpg" style="width:100%;">
                         <p>A detective hunts an international murderer committing ritualistic killings in a small Mississippi town. He seeks help from an anthropology professor who is an expert on the ancient rituals being performed.</p>
                   
                     </div>
                         
-                <div class="col" style="display:block; width:200px;" id="one">
+                <div class="col" id="one">
                     <button id="trailer"><a href="\trailers\series\Swarm - Official Trailer _ Prime Video-720p.mp4">trailer</a></button>
-                    <img class="img-fluid" src="\images\Swarm_TV.png" style="width:200px;">
+                    <img class="img-fluid" src="\images\Swarm_TV.png" style="width:100%;">
                     <p>Newlyweds are about to embark on the romantic honeymoon of a lifetime in Venice, but when the trip is gatecrashed by the groom's best friend, it turns their perfect lovers' holiday into a complete disaster.</p> 
                
                 </div>
-                    <div class="col" style="display:block; width:200px;" id="one">
-                        <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
-                        <img class="img-fluid" src="\images\accused.jpg" style="width:200px;">
-                        <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
                     
-                </div>
 
-        </div>      
+        </div>  
+        <div class="row">
+            <h1>Latest Episodes</h1>
+            <div class="col"  id="one">
+                <button id="trailer"><a href="">Season 19 episode 11</a></button> 
+                <img  src="\images\grey anatomy.jpg" class="img-fluid"  style="width:100%;">
+                <p>Addison makes a special appearance at Grey Sloan to welcome Bailey's new OB/GYN trainees. Maggie's lung transplant is derailed, and Nick bonds with Lucas - before the day takes a shocking turn.</p>
+            
+        </div>
+        <div class="col"  id="one">
+            <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+            <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+            <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+        
+    </div>
+    <div class="col" id="one">
+        <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+        <img class="img-fluid" src="\images\bel air.jpg" style="width:100%;">
+        <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+    
+</div>
+<div class="col" id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+
+</div>
+<div class="col" id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+
+</div>
+<div class="col" id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+
+</div>
+<div class="col" id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+
+</div>
+<div class="col"  id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
+
+</div>
+        </div>    
     </section>
     </div>
 </body>
