@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container-fluid">
-    <nav class="navbar navbar-expand-sm justify-content-end">
+    <nav class="navbar navbar-expand-sm">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="width:0; background-color:rgb(17, 16, 16);">
                 <span class="navbar-toggler-icon" style="width:20px; color:white"></span>
@@ -34,10 +34,16 @@
         <p  style="color:white" class="text-center">This is a website that helps our customers to get updated about the<br> new realeased movies and series, updated episodes before they physically <br>come to buy from the shop. </p>
         <span style="color:brown">Here are some of our updates:</span>
     </section>
-    <a href="#Movies" data-bs-toggle="collapse"class="btn btn-outline-info" >Click to see the latest movies</a>
-    <section id="Movies" class="collapse" style="display:;">
+    <a href="#Movies" data-bs-toggle="collapse"><button onclick='document.getElementById("text").innerHTML="explore movies"' class="btn btn-outline-info" id="text">Click to see the latest movies</button></a>
+    <section id="Movies"  class="collapse" style="display:;">
         <h2 style="color:orangered" class="text-center">Latest Movies</h2>
         <div class="row">
+            <div class="col"  id="one">
+                <button id="trailer"><a href="\trailers\avatar.mp4">trailer</a></button>
+                <img class="img-fluid" src="\images\avatar  way of water.jpg" style="width:100%;">
+                <p>Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. However, they must leave their home and explore the regions of Pandora. When an ancient threat resurfaces, Jake must fight a difficult war against the humans.</p> 
+           
+            </div>
             <div class="col" id="one">
                 <button id="trailer"><a href="\trailers\operation fortune.mp4">trailer</a></button>
                 <img class="img-fluid" src="\images\operation.jpg" style="width:100%;">
@@ -79,12 +85,7 @@
                   
                     </div>
                         
-                <div class="col"  id="one">
-                    <button id="trailer"><a href="\trailers\honeymoon.mp4">trailer</a></button>
-                    <img class="img-fluid" src="\images\honeymoon.jpg" style="width:100%;">
-                    <p>Newlyweds are about to embark on the romantic honeymoon of a lifetime in Venice, but when the trip is gatecrashed by the groom's best friend, it turns their perfect lovers' holiday into a complete disaster.</p> 
                
-                </div>
                     <div class="col"  id="one">
                         <button id="trailer"><a href="\trailers\the devil.mp4">trailer</a></button> 
                         <img class="img-fluid" src="\images\the devil.jpg" style="width:100%;">
@@ -94,8 +95,10 @@
         </div>
         </div>
     </section>
-    <a href="#series" data-bs-toggle="collapse"  class="btn btn-outline-info"  style="margin:10px">Go to series</a>
-    <section id="series" class="collapse">
+    
+    <a href="#tvshows"  data-bs-toggle="collapse"   style="margin:10px"><button class="btn btn-outline-info" id="shows" onclick='document.getElementById("shows").innerHTML="explore series"'>Go to series</button></a>
+    
+    <div id="tvshows" class="collapse">
        <h2 class="text-center" style="color:orangered">Latest TV shows and Episodes</h2>
         <div class="row">
             <div class="col">
@@ -132,9 +135,9 @@
             
             </div>
                 <div class="col" id="one">
-                    <button id="trailer"><a href="\trailers\series\watchful eye.mp4">trailer</a></button>
-                    <img class="img-fluid" src="\images\watchful eye.jpg" style="width:100%;">
-                    <p>It is based on a young woman who is thrust into a world of old money and deadly secrets.</p>
+                    <button id="trailer"><a href="\trailers\series\Walker Independence.mp4">trailer</a></button>
+                    <img class="img-fluid" src="\images\Walker-Independence-2022.jpg" style="width:100%;">
+                    <p>When a lively young family moves in next door, grumpy widower Otto Anderson meets his match in a quick-witted, pregnant woman named Marisol, leading to an unlikely friendship that turns his world upside down.</p>
                   
                  </div>
                     <div class="col" id="one">
@@ -155,24 +158,6 @@
         </div>  
         <div class="row">
             <h1>Latest Episodes</h1>
-            <div class="col"  id="one">
-    <button id="trailer"><a href="">Season 22 episode 16</a></button> 
-    <img class="img-fluid" src="\images\law and order.jpg" style="width:100%;">
-    <p>An internet dating site becomes the source of terror for a young widow; Muncy struggles with Velasco's absence.</p>
-
-</div>
-           <div class="col"  id="one">
-    <button id="trailer"><a href="">Season 3 episode 2</a></button> 
-    <img class="img-fluid" src="\images\power book 2.jpg" style="width:100%;">
-    <p>Tariq, Brayden, Effie and Cane divvy up Noma's product to push; Lorenzo sets a plan in motion to keep Monet off his trail after she orders him to find Zeke's killer; Cane looks into what happened at Mecca's hangar.</p>
-
-</div>  
-      <div class="col"  id="one">
-    <button id="trailer"><a href="">Season 5 episode 2 </a></button> 
-    <img class="img-fluid" src="\images\good trouble.jpg" style="width:100%;">
-    <p>Callie returns to the Coterie to support Mariana in a time of crisis. Gael searches for Isabella and his baby. When a member of the Coterie anonymously submits a complaint, Alice tracks down the secret critic. Luca digs into his past.</p>
-
-</div>
             <div class="col"  id="one">
                 <button id="trailer"><a href="">Season 19 episode 11</a></button> 
                 <img  src="\images\grey anatomy.jpg" class="img-fluid"  style="width:100%;">
@@ -209,10 +194,21 @@
     <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
 
 </div>
+<div class="col" id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
 
+</div>
+<div class="col"  id="one">
+    <button id="trailer"><a href="\trailers\series\accused.mp4">trailer</a></button> 
+    <img class="img-fluid" src="\images\accused.jpg" style="width:100%;">
+    <p>Hoping to save mankind, Archangel Michael soon comes to Earth to stop the devil's conspiracy once and for all.</p>
 
+</div>
         </div>    
-    </section>
+    </div>
+</section>
     </div>
 </body>
 </html>
