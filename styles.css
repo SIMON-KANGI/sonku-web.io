@@ -5,7 +5,7 @@
     text-decoration:none;
 }
 body{
-    background-image:Linear-gradient(to bottom right,black,rgba(0, 0, 255, 0.171))
+    background-image:Linear-gradient(black,black)
 }
 ul li{
     margin:10px;
@@ -97,5 +97,8 @@ color:rgb(238, 23, 23);
 }
 #series{
 margin:10px;
-display:none;
+display:;
+}
+carousel{
+    transition:10s ;
 }
