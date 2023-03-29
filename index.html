@@ -15,36 +15,49 @@
 <body>
     <div class="container-fluid">
         <nav class="navbar justify-content-center">
-            <ul class="nav">
-                <li class="nav-item dropdown">
-                    <a  style="color:aqua" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#Movies">Movies</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#action">Action</a> </li>
-                    <li><a class="dropdown-item" href="#animation">Animation</a> </li>
-                    <li><a class="dropdown-item" href="#comedy">Comedy</a> </li>
-                    <li><a class="dropdown-item" href="#horror">Horror</a> </li>
-                </ul>
-                
-                </li>
-                <li class="nav-item dropdown">
-                    <a  style="color:aqua" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#series">Series</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#action">Action</a> </li>
-                        <li><a class="dropdown-item" href="#animation">Animation</a> </li>
-                        <li><a class="dropdown-item" href="#comedy">Comedy</a> </li>
-                        <li><a class="dropdown-item" href="#horror">Horror</a> </li>
-                    </ul>
-                 </li>
-                <li class="nav-item"><a href="#contact">Contact</a> </li>
-            </ul>
+           <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#welcome">Home</a> </li>
+<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Movies">Movies</a> </li>
+<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#series">Series</a> </li>
+<li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a> </li>
+           </ul>
         </nav>
-    <section id="welcome">
+        <!----------------tab content-->
+        <div class="tab-content">
+    <section id="welcome" class="container-fluid tab-pane active" style="background-image:url('\images\night agent.jpg')">
         <h1 class="text-center">Welcome to our webpage</h1>
         <p  style="color:white" class="text-center">This is a website that helps our customers to get updated about the<br> new realeased movies and series, updated episodes before they physically <br>come to buy from the shop. </p>
         <span style="color:brown">Here are some of our updates:</span>
+        <div class="carousel" id="updates" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#updates" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#updates" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#updates" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#updates" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#updates" data-bs-slide-to="4"></button>
+              </div>
+  <!-----slideshow carousel-->   
+  <div class="carousel-inner">
+    <div class="carousel-item active"><img src="\images\night agent.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item"><img src="\images\avatar  way of water.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item"><img src="\images\watchful eye.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item"><img src="\images\wu tang.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item"><img src="\images\operation.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+  </div>   
+  <button class="carousel-control-prev" type="button" data-bs-target="#updates" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#updates" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+      
+        </div>
     </section>
-    <a href="#Movies" data-bs-toggle="collapse"><button style="" onclick='document.getElementById("text").innerHTML="explore movies"' class="btn btn-outline-info" id="text">Click to see the latest movies</button></a>
-    <section id="Movies"  class="collapse" style="display:;">
+   
+<div class="container-fluid tab-pane fade" id="Movies">
+    <a href="#movies" data-bs-toggle="collapse"><button style="" onclick='document.getElementById("text").innerHTML="explore movies"' class="btn btn-outline-info" id="text">Click to see the latest movies</button></a>
+    <section id="movies"  class="collapse" style="display:;">
         <h2 style="color:orangered" class="text-center">Latest Movies</h2>
         <div class="row">
             <div class="col"  id="one">
@@ -103,11 +116,9 @@
                 </div>
         </div>
         </div>
-    </section>
+
     
-    <a href="#tvshows"  data-bs-toggle="collapse"   style="margin:10px"><button class="btn btn-outline-info" id="shows" onclick='document.getElementById("shows").innerHTML="explore series"'>Go to series</button></a>
-    
-    <div id="tvshows" class="collapse">
+    <div id="series" class="container-fluid tab-pane fade">
        <h2 class="text-center" style="color:orangered">Latest TV shows and Episodes</h2>
         <div class="row">
             <div class="col">
@@ -217,8 +228,8 @@
 </div>
         </div>    
     </div>
-</section>
     </div>
+</div>
     <script>
         nav=myFunction(){
             return "ul"
