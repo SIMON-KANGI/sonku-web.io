@@ -10,7 +10,7 @@ html{
     overflow:scroll;
 }
 body{
-    background-image:linear-gradient(rgb(20, 20, 20),rgb(6, 6, 19));
+    background-image:linear-gradient(rgb(8, 7, 7),rgb(6, 6, 19));
 }
 nav{
     display:block;
@@ -19,11 +19,10 @@ li{
     list-style-type: none;
 }
 ul li{
-    margin:10px;
-
+    margin:5px;
 }
-ul li a{
-    color:aquamarine
+li a{
+    color:white;
 }
 ul li a:hover{
 color:#ff8800
@@ -42,6 +41,7 @@ span{
 .col p{
     font-size:12px;
     font-weight:bold;
+    display:none;
 }
 .col img{
     height:350px;
@@ -109,6 +109,7 @@ color:rgb(238, 23, 23);
         display:block;
         float: right;
         font-size:1.5rem;
+        
     }
    
    
@@ -127,7 +128,7 @@ carousel{
 }
 #menu{
     color:white;
-    position: fixed;
+    position: absolute;
     width:4rem;
 }
 
