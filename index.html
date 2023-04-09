@@ -15,19 +15,22 @@
 </head>
 <body>
     <div class="container-fluid">
-        <a href="#nav" data-bs-toggle="collapse"><i class='bx bx-menu' id="menu"></i></a>
-            <nav class="navbar justify-content-center collapse" id="nav">
-                <ul class="nav nav-tabs" role="tablist">
+        <a class="navbar-brand" href="javascript:void(0)">Sonku</a>
+       <nav class="navbar navbar-expand-sm">
+        <h1 class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#nav"><i  id="menu" class='bx bx-menu'></i> </h1>
+        <div id="nav" class="collapse navbar-collapse">
+                <ul class="nav" role="tablist">
                     <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#welcome">Home</a> </li>
-        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#Movies">Movies</a> </li>
-        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#series">Series</a> </li>
-        <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#contact">Contact</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#Movies">Movies</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#series">Series</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a> </li>
                    </ul>
+                   </div>
             </nav>
             
          
          <!----------------tab content-->
-        <div class="tab-content">
+
     <section id="welcome" style="display:block;" class="container-fluid tab-pane active">
        
         <h1 class="text-center">Welcome to our <span>webpage</span></h1>
@@ -43,12 +46,14 @@
               </div>
   <!-----slideshow carousel-->   
   <div class="carousel-inner">
-    <div class="carousel-item active"><img src="\images\night agent.jpg" class="d-block img-fluid" style="width:100%; height:90vh"><span><a href="\trailers\series\night agent.mp4">Watch </a></span> </div>
-    <div class="carousel-item"><img src="\images\avatar  way of water.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
-    <div class="carousel-item"><img src="\images\watchful eye.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item active"><img src="\images\shazam 2.jpg" class="d-block img-fluid" style="width:100%; height:90vh"><span><a href="\trailers\series\night agent.mp4">Watch </a></span> </div>
+    <div class="carousel-item"><img src="\images\65.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item"><img src="\images\creed 3.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+    <div class="carousel-item"><img src="\images\night agent.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+ <div class="carousel-item"><img src="\images\avatar  way of water.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
+   
     <div class="carousel-item"><img src="\images\wu tang.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
-    <div class="carousel-item"><img src="\images\operation.jpg" class="d-block img-fluid" style="width:100%; height:90vh"> </div>
-  </div>   
+ 
   <button class="carousel-control-prev" type="button" data-bs-target="#updates" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
@@ -56,10 +61,23 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-</nav>
-
+</div>
+<h1 class="text-center">Trending</h1>
 <div class="row">
-   
+    <div class="col">
+        <div class="movie-layer">
+            <a href="\trailers\shazam 2.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle'></i></a>
+        </div>
+        <img src="\images\shazam 2.jpg" class="img-fluid">
+        
+    </div>
+    <div class="col">
+        <div class="movie-layer">
+            <a href="\trailers\65.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
+        </div>
+        <img src="\images\65.jpg" class="img-fluid">
+       
+    </div>
     <div class="col">
         <div class="movie-layer">
             <a href="\trailers\CREED III.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
@@ -95,31 +113,23 @@
         <img src="\images\operation.jpg" class="img-fluid">
        
     </div>
-    <div class="col">
-        <div class="movie-layer">
-            <a href="\trailers\series\wolf pack.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
-        </div>
-        <img src="\images\wolf pack.jpg" class="img-fluid">
-        
-    </div>
-    <div class="col">
-        <div class="movie-layer">
-            <a href="\trailers\wu tang.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
-        </div>
-        <img src="\images\wu tang.jpg" class="img-fluid">
-        
-    </div>
-    </div>
+   </div>
     <div class="row">
-        
-    <div class="col">
-        <div class="movie-layer">
-            <a href="\trailers\magic mike.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
+        <div class="col">
+            <div class="movie-layer">
+                <a href="\trailers\series\wolf pack.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
+            </div>
+            <img src="\images\wolf pack.jpg" class="img-fluid">
+            
         </div>
-        <img src="\images\mike.jpg" class="img-fluid">
-       
-    </div>
-    <div class="col">
+        <div class="col">
+            <div class="movie-layer">
+                <a href="\trailers\wu tang.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
+            </div>
+            <img src="\images\wu tang.jpg" class="img-fluid">
+            
+        </div>
+        <div class="col">
         <div class="movie-layer">
             <a href="\trailers\plane.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle' ></i></a>
         </div>
@@ -154,18 +164,12 @@
         <img src="\images\SEX LIFE.jpg" class="img-fluid">
         
     </div>
-    <div class="col">
-        <div class="movie-layer">
-            <a href="\trailers\shadow.mp4" class="btn-outline-info" id="play"><i class='bx bx-play-circle'></i></a>
-        </div>
-        <img src="\images\shadow and bone.jpg" class="img-fluid">
-        
-    </div>
+    
 </div>
         
     </section>
    
-    <div class="container-fluid tab-pane fade" id="Movies">
+    <div class="container-fluid" id="Movies">
         <a href="#movies" data-bs-toggle="collapse"><button style="" onclick='document.getElementById("text").innerHTML="explore movies"' class="btn btn-outline-info" id="text">Click to see the latest movies</button></a>
         <section id="movies"  class="collapse" style="display:;">
             <h2 style="color:orangered" class="text-center">Latest Movies</h2>
@@ -228,7 +232,10 @@
             </div>
     
         
-        <div id="series" class="container-fluid tab-pane fade">
+        <div id="series" class="container-fluid">
+
+            <a href="#Series" data-bs-toggle="collapse"><button style="" onclick='document.getElementById("text").innerHTML="explore movies"' class="btn btn-outline-info" id="text">Click to see the latest Series</button></a>
+            <section id="Series" class="collapse">
            <h2 class="text-center" style="color:orangered">Latest TV shows and Episodes</h2>
             <div class="row">
                 <div class="col">
@@ -338,7 +345,7 @@
     </div>
             </div>    
         </div>
-        </div>
+        
     </div>
         <script>
             nav=myFunction(){
