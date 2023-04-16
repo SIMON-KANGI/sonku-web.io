@@ -13,22 +13,21 @@ body{
     background-image:linear-gradient(rgb(8, 7, 7),rgb(6, 6, 19));
 }
 nav{
-    display:block;
+    display:none;
 }
 ul{
     list-style-type: none;
 }
-ul li{
-    margin:5px;
-}
 li a{
     color:white;
 }
-ul li a:hover{
-color:#ff8800
+li a:hover{
+    color:rgb(211, 27, 27);
 }
 span{
-    color:rgb(47, 161, 255)
+    color:hsl(305, 73%, 50%);
+    font-weight:bold;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 
 .col{
@@ -37,6 +36,11 @@ span{
     height:fit-content; 
     transition:.5s ease;
     
+}
+.navbar-brand{
+    color:rgb(182, 32, 115);
+    font-size:2rem;
+    font-family: 'Rubik Spray Paint', cursive;
 }
 .col p{
     font-size:12px;
@@ -62,8 +66,9 @@ a{
     text-decoration:none;
 }
  h1{
-color:rgb(238, 23, 23);
+color:rgb(128, 7, 7);
     font-weight:bold;
+    font-family: 'Sedgwick Ave Display', cursive;
 }
 .row::after {
     content: "";
