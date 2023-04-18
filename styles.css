@@ -37,7 +37,11 @@ span{
     font-weight:bold;
     font-family: 'Sedgwick Ave Display', cursive;
 }
-
+@media screen and(max-width:450px){
+    .topnav a{
+        margin:5px;
+    }
+}
 .col{
     border:solid 1px;
     margin:10px;
