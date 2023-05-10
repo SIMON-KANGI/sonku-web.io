@@ -68,7 +68,7 @@ span{
     height:300px;
 }
 .col:hover{
-    transform: scale(1.3);
+    transform: scale(0.5);
    
 }
 
