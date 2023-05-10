@@ -67,8 +67,12 @@ span{
 .col img{
     height:300px;
 }
+.col img:hover{
+    opacity:0.5;
+}
 .col:hover{
     transform: scale(1.1);
+    
    
 }
 
