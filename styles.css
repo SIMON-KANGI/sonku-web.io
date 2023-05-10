@@ -173,8 +173,8 @@ video{
    position:fixed;
 }
 #play:hover{
-color:rgb(212, 7, 68);
-font-size:4rem;
+color:rgb(21, 212, 68);
+font-size:3rem;
 }
 @media screen and(max-width:560px){
     #play{
@@ -186,8 +186,8 @@ font-size:4rem;
        position:fixed;
     }
     #play:hover{
-        color:rgb(212, 7, 68);
-        font-size:1rem;
+        color:rgb(2, 212, 68);
+        font-size:0.7rem;
         display:none;
         }
     
