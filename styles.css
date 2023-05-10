@@ -60,7 +60,7 @@ span{
     display:none;
 }
 .col img{
-    height:350px;
+    height:300px;
 }
 .col:hover{
     transform: scale(1.3);
