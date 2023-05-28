@@ -165,6 +165,7 @@ video{
     overflow: hidden;
 }
 #play{
+    align-items:center;
     width:100px;
     font-size:3rem;
     display:block;
