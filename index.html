@@ -17,11 +17,16 @@
 <body>
     <div class="container-fluid">
         <a class="navbar-brand" href="javascript:void(0)">Sonku</a>
-        <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a href="#Movies">Movies</a>
-            <a href="#series">Series</a>
-            <a href="#about">About</a>
+        <div class="topnav" id="myNav">
+      <span style="font-size:20px;cursor:pointer" id="open" onclick="openNav()">&#9776; </span>                                
+         <nav class="navbar">  
+         <ul>                   
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#Movies">Home</a></li>
+           <li class="nav-item"><a class="nav-link active" href="#series">Home</a></li>
+           <li class="nav-item"><a class="nav-link active" href="#about">Home</a></li>                                                             
+           </ul>         
+          </nav>                   
           </div>
             
          <section id="welcome" style="display:block;" class="container-fluid tab-pane active">
@@ -394,6 +399,12 @@
             nav=myFunction(){
                 return "ul"
             }
+     function openNav(){
+          document.getElementById("myNav").style.width="100%"
+          }    
+        function closeNav(){
+          document.getElementById("myNav").style.width="0%"
+          }                                                                                                          
         </script>
     </body>
     </html>
