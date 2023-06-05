@@ -23,7 +23,7 @@ li{
     margin: 5px;
 }
 li a:active{
-    background-color:gold;
+    background-color:rgb(30,100,150);
 #open{
    display:none; 
 }
