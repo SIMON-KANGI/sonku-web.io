@@ -12,11 +12,18 @@ html{
 body{
     background-image:linear-gradient(rgb(8, 7, 7),rgb(6, 6, 19));
 }
+nav{
+    float:right;
+}
 ul{
     display:flex;
 }
 li{
     list-style-type:none;
+    margin: 5px;
+}
+#open{
+   display:none; 
 }
 .topnav{
     overflow: hidden;
@@ -49,6 +56,9 @@ span{
     display:none;
 }
 @media screen and(max-width:450px){
+    #open{
+   display:block; 
+}
     .topnav a{
         margin:5px;
     }
