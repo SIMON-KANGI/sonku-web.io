@@ -24,6 +24,7 @@ li{
 }
 li a:active{
     background-color:rgb(30,100,150);
+}
 #open{
    display:none; 
 }
